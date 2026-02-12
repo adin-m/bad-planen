@@ -1,7 +1,7 @@
 <?php
 /*
 Name: 			Contact Form
-Written by: 	Okler Themes - (http://www.okler.net)
+Written by: 	Adin Mulagic - (http://www.adinmulagic.me)
 Theme Version:	13.0.0
 */
 
@@ -20,7 +20,7 @@ require 'php-mailer/src/SMTP.php';
 require 'php-mailer/src/Exception.php';
 
 // Step 1 - Enter your email address below.
-$email = 'you@domain.com';
+$email = 'office@badplanen.at';
 
 // If the e-mail is not working, change the debug option to 2 | $debug = 2;
 $debug = 0;
@@ -56,13 +56,13 @@ try {
 
 	// Step 2 (Optional) - If you don't receive the email, try to configure the parameters below:
 
-	//$mail->IsSMTP();                                         // Set mailer to use SMTP
-	//$mail->Host = 'mail.yourserver.com';				       // Specify main and backup server
-	//$mail->SMTPAuth = true;                                  // Enable SMTP authentication
-	//$mail->Username = 'user@example.com';                    // SMTP username
-	//$mail->Password = 'secret';                              // SMTP password
-	//$mail->SMTPSecure = 'tls';                               // Enable encryption, 'ssl' also accepted
-	//$mail->Port = 587;   								       // TCP port to connect to
+		$mail->IsSMTP(); 
+		$mail->Host = 'smtp.gmail.com'; // e.g., smtp.world4you.com
+		$mail->SMTPAuth = true;
+		$mail->Username = 'adinmulagic@gmail.com';
+		$mail->Password = 'pxbb yyke emks dxlk';
+		$mail->SMTPSecure = 'ssl'; 
+		$mail->Port = 465;
 
 	$mail->AddAddress($email);	 						       // Add another recipient
 
