@@ -490,6 +490,10 @@ a.text-tertiary:hover {
 		background-color: var(--primary);
 }
 
+.cookie-message {
+    
+  }
+
 /*
 * Testimonial
 */
